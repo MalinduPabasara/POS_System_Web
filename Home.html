@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Home Page</title>
+    <link href="assets/css/bootstrap.css" rel="stylesheet">
+    <link href="assets/css/HomePage.css" rel="stylesheet">
+    <link href="assets/css/customer.css" rel="stylesheet">
+    <link href="assets/css/item.css" rel="stylesheet">
+    <link href="assets/css/PlaceOrderForm.css" rel="stylesheet">
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light bg-info" id="mainnav">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">POS System</a>
+        <button aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler"
+                data-bs-target="#navbarNavDropdown" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" id="homelink" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="maincuslink" href="#">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="mainitemlink" href="#">Item</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="mainplaceorderlink" href="#">Place Order</a>
+                </li>
+
+<!--                <li class="nav-item dropdown">-->
+<!--                    <a aria-expanded="false" class="nav-link dropdown-toggle" data-bs-toggle="dropdown"  href="#"-->
+<!--                       id="navbarDropdownMenuLink" role="button">-->
+<!--                        Orders-->
+
+<!--                    </a>-->
+<!--                    <ul aria-labelledby="navbarDropdownMenuLink" class="dropdown-menu">-->
+<!--                        <li><a class="dropdown-item" id="mainplaceorderlink" href="#">Place Order</a></li>-->
+<!--                        <li><a class="dropdown-item" id="mainaboutlink" href="#">About</a></li>-->
+
+<!--                    </ul>-->
+
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<section id="homeContent">
+
+    <img alt="image" id="mainimg" src="assets/icn/customerMainImg.png">
+
+    <section class="row mb-3 shadow" id="cform">
+        <nav class="navbar navbar-expand bg-info">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Customer</span>
+            </div>
+        </nav>
+
+        <div class="col">
+            <form class="cusform">
+                <img alt="customeImg" id="cusimg" src="assets/icn/customerimg.png">
+            </form>
+        </div>
+    </section>
+    <section class="row mb-3 shadow" id="itemform">
+        <nav class="navbar navbar-expand bg-info">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Items</span>
+            </div>
+        </nav>
+
+        <div class="col">
+            <form class="classitemform">
+                <img alt="itemimg" id="itemimg" src="assets/icn/itemimg.png">
+            </form>
+        </div>
+    </section>
+    <section class="row mb-3 shadow" id="ordersform">
+        <nav class="navbar navbar-expand bg-info">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Orders</span>
+            </div>
+        </nav>
+
+        <div class="col">
+            <form class="classorderform">
+                <img alt="orderimg" id="orderimg" src="assets/icn/ordersimg.png">
+            </form>
+        </div>
+    </section>
+</section>
+
+<footer>
+
+</footer>
+
+
+<!--===========================Customer Content====================================================-->
+
+
+<section id="customerContent">
+    <section id="ccontent2">
+        <h4 class="mx-5 mt-3 fs-2 fw-bold" id="custlable">Customer Form</h4>
+
+        <div class="ctopbtn">
+            <button class="btn btn-primary shadow" type="button" id="btnNewCustomer">New Customer</button>
+            <button class="btn btn-outline-info" type="button" id="btnGetAllCustomers">View All Customer</button>
+        </div>
+
+        <section class="row mt-3 shadow" id="form">
+
+            <nav class="navbar navbar-dark bg-primary">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Add Customer Form</span>
+                </div>
+            </nav>
+
+            <div class="col">
+                <form name="frm">
+                    <div class="mb-3">
+                        <label class="form-label" for="txtcustomerID">Customer ID</label>
+                        <input name="a" class="form-control" id="txtcustomerID" placeholder="C00-001" type="text">
+                        <span class="control-error" id="lblcusID"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtcustomerName">Customer Name</label>
+                        <input name="b" class="form-control" id="txtcustomerName" placeholder="Kavindu" type="text">
+                        <span class="control-error" id="lblcustomerName"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtaddress">Address</label>
+                        <input name="c" class="form-control" id="txtaddress" placeholder="215/A, Galle Road, Labuduwa" type="text">
+                        <span class="control-error" id="lblcustomerAddress"></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtdob">Date of Birthday</label>
+                        <input name="d" class="form-control" id="txtdob" placeholder="1990/10/10" type="date">
+                        <span class="control-error" id="lbldob"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtcontactNo">Contact No</label>
+                        <input name="e" class="form-control" id="txtcontactNo" placeholder="0719898298" type="text">
+                        <span class="control-error" id="lblcontact"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtGender">Gender</label>
+                        <input name="f" class="form-control" id="txtGender" placeholder="Male or Female" type="text">
+                        <span class="control-error" id="lblgender"></span>
+                    </div>
+<!--                    <div class="col-md-4">-->
+<!--                        <label for="inputState" class="form-label">Gender</label>-->
+<!--                        <select id="inputState" class="form-select">-->
+<!--                            <option selected id="txtGender">Choose...</option>-->
+<!--                            <option id="txtMale">Male</option>-->
+<!--                            <option id="txtFemale">Female</option>-->
+<!--                        </select>-->
+<!--                    </div>-->
+                </form>
+            </div>
+
+        </section>
+
+        <div class="m-3">
+            <button class="btn btn-primary shadow" type="button" id="btnSaveCustomer">Save Customer</button>
+            <button class="btn btn-success" type="button" id="btnUpdate">Update</button>
+            <button class="btn btn-danger shadow-sm" type="button" id="btnClerCustomer">Clear</button>
+            <button class="btn btn-danger shadow" type="button" id="btncusDelete">Delete</button>
+        </div>
+
+
+        <div class="w-75 p-3" id="tableclass">
+            <table class="table table-bordered table-active table-hover table-primary" id="table">
+                <thead class="bg-secondary text-dark">
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Customer Name</th>
+                    <th>Customer Address</th>
+                    <th>Date of Birthday</th>
+                    <th>Contact No</th>
+                    <th>Gender</th>
+
+                </tr>
+                </thead>
+                <tbody id="tblCustomer">
+
+
+                </tbody>
+
+            </table>
+        </div>
+
+    </section>
+    </section>
+
+
+<!--========================================Item Content===================================================-->
+
+
+<section id="itemContent">
+    <section id="icontent2">
+        <h4 class="mx-5 mt-3 fs-2 fw-bold" id="itemlable">Item Form</h4>
+
+        <div class="itopbtn">
+            <button class="btn btn-primary shadow" type="button" id="btnNewItem">New Item</button>
+            <button class="btn btn-outline-info" type="button" id="btnGetAllItem">View All Item</button>
+        </div>
+
+        <section class="row mb-3 shadow" id="iform">
+
+            <nav class="navbar navbar-dark bg-success">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Item Form</span>
+                </div>
+            </nav>
+            <form name="ifrm">
+            <div class="mb-3 ">
+                <label class="form-label" for="txtitemID">Item ID</label>
+                <input name="g" class="form-control" id="txtitemID" placeholder="I00-001" type="text">
+                <span class="control-error" id="lblitemID"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txtitemName">Item Name</label>
+                <input name="h" class="form-control" id="txtitemName" placeholder="Anchor" type="text">
+                <span class="control-error" id="lblitemName"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txtprice">Price</label>
+                <input name="i" class="form-control" id="txtprice" placeholder="90" type="text">
+                <span class="control-error" id="lblitemPrice"></span>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="txtquantity">Quantity</label>
+                <input name="j" class="form-control" id="txtquantity" placeholder="3" type="text">
+                <span class="control-error" id="lblitemquantity"></span>
+            </div>
+            </form>
+        </section>
+
+        <div class="m-3">
+            <button class="btn btn-primary shadow" type="button" id="btnSaveItem">Add Item</button>
+            <button class="btn btn-success" type="button" id="btnitemUpdate">Update</button>
+            <button class="btn btn-danger shadow-sm" type="button" id="btnClerItem">Clear</button>
+            <button class="btn btn-danger shadow" id="btnitemdelete" type="button">Delete</button>
+        </div>
+
+        <div class="w-100 p-3" id="itable">
+
+            <table class="table table-bordered table-active table-hover table-success">
+                <thead class="bg-secondary text-dark">
+                <tr>
+                    <th>Item ID</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+
+                </tr>
+                </thead>
+                <tbody id="tblItem">
+
+
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+</section>
+
+
+<!--======================================Place Order Content=================================================-->
+
+<section id="pordercontent">
+    <section id="pcontent2">
+
+        <h4 class="mx-5 mt-3 fs-2 fw-bold" id="pitemlable">Place Order Form</h4>
+
+        <section class="row mb-3 shadow" id="poform">
+
+            <nav class="navbar navbar-dark bg-info">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Item Select</span>
+                </div>
+            </nav>
+
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtsitemcode">Item Code</label>
+                        <input class="form-control" id="txtsitemcode" placeholder="I00-001" type="text">
+                        <span class="control-error" id="lblsitemcode"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtpiname">Item Name</label>
+                        <input class="form-control" id="txtpiname" placeholder="Anchor" type="text">
+                        <span class="control-error" id="lblpiname"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtpiprice">Price</label>
+                        <input class="form-control" id="txtpiprice" placeholder="00.00" type="text">
+                        <span class="control-error" id="lblpiprice"></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtpipqty">Qty</label>
+                        <input class="form-control" id="txtpipqty" placeholder="3" type="text">
+                        <span class="control-error" id="lblpiqty"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtpipquantity">Order Quantity</label>
+                        <input class="form-control" id="txtpipquantity" placeholder="5" type="text">
+                        <span class="control-error" id="lblpiquantity"></span>
+                    </div>
+                </form>
+            </div>
+
+            <button class="btn btn-primary shadow " id="btnadditem" type="button">Add Item</button>
+<!--            <button class="btn btn-danger " id="btndeleteitem" type="button">Delete</button>-->
+
+        </section>
+
+
+
+        <section class="row mb-3 shadow" id="invoceform">
+
+            <nav class="navbar navbar-dark bg-info">
+                <div class="container-fluid">
+                    <span class="navbar-brand mb-0 h1">Invoice Details</span>
+                </div>
+            </nav>
+
+            <div class="col">
+                <form name="">
+                    <div class="mb-3">
+                        <label class="form-label" for="txtIorderID">Order ID</label>
+                        <input name="" class="form-control" id="txtIorderID" placeholder="O00-001" type="text">
+                        <span class="control-error" id="lblinvoiceOrderID"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtIcustomerID">Customer ID</label>
+                        <input class="form-control" id="txtIcustomerID" placeholder="" type="text">
+                        <span class="control-error" id="lblIcustomerID"></span>
+                    </div>
+
+                    <!--<div class="col-md-4">
+                        <label class="form-label" for="txtpcustomer">Customer</label>
+                        <select class="form-select" id="txtpcustomer">
+                            <option selected>Select Customer</option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>-->
+
+                    <div class="mb-3">
+                        <label class="form-label" for="txtInvCustomerName">Name</label>
+                        <input class="form-control" id="txtInvCustomerName" placeholder="Kamal" type="text">
+                        <span class="control-error" id="lblinvoceName"></span>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col">
+                <form>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtInvdate">Date</label>
+                        <input class="form-control" id="txtInvdate" placeholder="" type="date">
+                        <span class="control-error" id="lblinvoicedate"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtIcustomerID1">Customer ID</label>
+                        <input class="form-control" id="txtIcustomerID1" placeholder="" type="text">
+                        <span class="control-error" id="lblinvoicecusID1"></span>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="txtInvsalary">Salary</label>
+                        <input class="form-control" id="txtInvsalary" placeholder="" type="text">
+                        <span class="control-error" id="lblinvoiceSalary"></span>
+                    </div>
+                </form>
+            </div>
+            <form>
+                <div class="mb-3">
+                    <label class="form-label" for="txtInvaddress">Address</label>
+                    <input class="form-control" id="txtInvaddress" placeholder="" type="text">
+                    <span class="control-error" id="lblinvoceAddress"></span>
+                </div>
+            </form>
+
+
+        </section>
+
+        <section class="row mb-3 shadow" id="billform">
+
+            <div class="col">
+                <form>
+                    <h4 id="totllbl">Total :</h4>
+                    <h4 id="totllblval">00</h4>
+                    <h4 id="totllbl1">.Rs/=</h4>
+
+
+                    <h4 id="stotllbl">SubTota :</h4>
+                    <h4 id="stotllblval">00</h4>
+                    <h4 id="stotllbl1">.Rs/=</h4>
+                    <div class="mb-3" id="cashfield">
+                        <label class="form-label" for="txtcash">Cash</label>
+                        <input class="form-control" id="txtcash" placeholder="" type="text">
+                        <span class="control-error" id="lblCash"></span>
+                    </div>
+                    <div class="mb-3" id="discountfield">
+                        <label class="form-label" for="txtdiscount">Discount</label>
+                        <input class="form-control" id="txtdiscount" placeholder="" type="text">
+                        <span class="control-error" id="lblDiscount"></span>
+                    </div>
+                    <div class="mb-3" id="balancefield">
+                        <label class="form-label" for="txtbalance">Balance</label>
+                        <input class="form-control" id="txtbalance" placeholder="" type="text">
+                        <span class="control-error" id="lblBalance"></span>
+                    </div>
+                </form>
+            </div>
+
+            <button class="btn btn-success shadow " id="purchasebtn" type="button">Purchase</button>
+
+        </section>
+
+
+        <div class="w-100 p-0" id="ordertable">
+            <table class="table table-bordered table-active table-hover table-primary" >
+                <thead class="bg-secondary text-dark">
+                <tr>
+                    <th>Item Code</th>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+
+                </tr>
+                </thead>
+                <tbody id="tblplaceorder">
+
+                </tbody>
+
+            </table>
+
+
+        </div>
+
+    </section>
+</section>
+
+<footer>
+    <h4 id="footer">Developed by Malindu Pabasara</h4>
+</footer>
+
+<script src="assets/js/jquery-3.6.0.min.js"></script>
+<script src="assets/js/bootstrap.js"></script>
+<script src="assets/js/posjs.js"></script>
+<script src="db/db.js"></script>
+<script src="model/customerDTO.js"></script>
+<script src="model/itemDTO.js"></script>
+<script src="model/orderDTO.js"></script>
+<script src="controller/customerController.js"></script>
+<script src="controller/itemController.js"></script>
+<script src="controller/orderController.js"></script>
+
+</body>
+</html>

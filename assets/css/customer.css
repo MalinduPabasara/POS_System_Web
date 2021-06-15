@@ -1,0 +1,46 @@
+#form {
+    margin-left: 50px;
+    margin-right: 40px;
+    position: relative;
+    top: 55px;
+    height: 325px;
+    width: 1200px;
+
+}
+
+#custlable {
+    margin-bottom: 30px;
+
+}
+
+#tableclass {
+    /*position: relative;*/
+    /*top: 80px;*/
+
+    position: absolute;
+    top: 595px;
+    left: 50px;
+
+}
+
+.ctopbtn {
+    position: absolute;
+    left: 950px;
+
+}
+
+.m-3 {
+    position: absolute;
+    top: 478px;
+    left: 60px
+
+}
+#ccontent2{
+    position: absolute;
+    top: 55px;
+}
+
+
+
+
+

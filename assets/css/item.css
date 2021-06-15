@@ -1,0 +1,35 @@
+.itopbtn {
+    position: relative;
+    left: 400px;
+}
+
+#iform {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    left: 40px;
+    top: 30px;
+}
+
+#itable {
+    position: absolute;
+    left: 670px;
+    width: 425px;
+    top: 112px;
+}
+
+.m-3 {
+    position: absolute;
+    top: 535px;
+    left: 60px;
+}
+
+#btndelete {
+    position: relative;
+    left: 60px;
+
+}
+#icontent2{
+    position: absolute;
+    top: 55px;
+}

@@ -1,0 +1,110 @@
+#poform {
+    position: relative;
+    left: 40px;
+    width: 750px;
+    top: 20px;
+    height: 402px;
+}
+
+#btnadditem {
+    position: relative;
+    width: 100px;
+    height: 38px;
+    top: 185px;
+    right: 120px;
+}
+#btndeleteitem{
+    position: relative;
+    width: 100px;
+    height: 38px;
+    top: 185px;
+    right: 120px;
+}
+
+#invoceform {
+    position: absolute;
+    left: 820px;
+    top: 80px;
+    width: 500px;
+    height: 400px;
+}
+
+#billform {
+    position: relative;
+    left: 40px;
+    width: 420px;
+    top: 40px;
+    height: 420px;
+}
+
+#purchasebtn {
+    position: absolute;
+    width: 160px;
+    height: 45px;
+    left: 125px;
+    top: 350px;
+
+}
+
+#ordertable {
+    position: relative;
+    left: 550px;
+    bottom: 390px;
+}
+
+#totllbl {
+    color: #c23854;
+    font-size: 24px;
+}
+#totllblval{
+    color: #c23854;
+    font-size: 24px;
+    position: relative;
+    bottom: 35px;
+    left: 75px;
+}
+#totllbl1{
+    color: #c23854;
+    font-size: 24px;
+    position: relative;
+    bottom: 72px;
+    left: 200px;
+}
+#stotllbl1{
+    color: #c23854;
+    font-size: 24px;
+    position: relative;
+    bottom: 137px;
+    left: 200px;
+}
+#stotllblval{
+    color: #c23854;
+    font-size: 24px;
+    position: relative;
+    bottom: 101px;
+    left: 110px;
+}
+
+#stotllbl {
+    color: #ec1117;
+    position: relative;
+    bottom: 65px;
+}
+
+#pcontent2{
+    position: absolute;
+    top: 55px;
+}
+#cashfield{
+    position: relative;
+    bottom: 115px;
+}
+#discountfield{
+    position: relative;
+    bottom: 120px;
+}
+#balancefield{
+    position: relative;
+    bottom: 125px;
+
+}

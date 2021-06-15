@@ -1,0 +1,74 @@
+#mainimg {
+    width: 1349px;
+    height: 600px;
+}
+#mainnav{
+    position: fixed;
+    width: 1349px;
+}
+
+#cform {
+    position: relative;
+    left: 60px;
+    top: 55px;
+    width: 300px;
+    height: 260px;
+}
+
+#cusimg {
+    position: relative;
+    left: 100px;
+    top: 40px;
+
+}
+
+.cusform {
+    height: 170px;
+}
+
+#itemform {
+    position: relative;
+    left: 510px;
+    top: -220px;
+    width: 300px;
+    height: 260px;
+}
+
+#itemimg {
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+
+.classitemform {
+    height: 170px;
+}
+
+#ordersform {
+    position: relative;
+    left: 959px;
+    top: -496px;
+    width: 300px;
+    height: 260px;
+}
+
+.classorderform {
+    height: 170px;
+}
+
+#orderimg {
+    position: relative;
+    left: 100px;
+    top: 40px;
+}
+#homeContent{
+    height: 400px;
+}
+#footer{
+    position: fixed;
+    font-size: 5px;
+    color: black;
+    bottom: 0px;
+    right: 0px;
+}
+
